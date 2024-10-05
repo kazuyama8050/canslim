@@ -18,6 +18,9 @@ class JpSymbolHandler():
         self.symbol_list_downloadpath = os.path.join(app_dir, self.config.get("input", "jp_symbol_list_downloadpath"))
         
     def download_symbol_list(self):
+        if os.path.exists(os.path.dirname(self.symbol_list_downloadpath)) is False:
+            os.makedirs(os.path.dirname(self.symbol_list_downloadpath))
+            
         symbol_list_endpoint = self.config.get("input", "jp_symbol_list_endpoint")
         r = requests.get(symbol_list_endpoint)
         with open(os.path.join(app_dir, self.symbol_list_downloadpath), 'wb') as output:

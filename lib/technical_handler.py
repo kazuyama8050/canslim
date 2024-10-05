@@ -133,7 +133,6 @@ class TechnicalHandler:
         
         
     def download_stock_close_data(self, symbols, before, after):
-        print(symbols)
         yahoo_financials = YahooFinancials(symbols)
         stock_data = yahoo_financials.get_historical_price_data(before, after, "daily")
         stock_dict = {}
