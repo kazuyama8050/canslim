@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+japanize_matplotlib
+seaborn
+mplfinance
+sqlalchemy
+pandas_datareader
+yfinance
+investpy
+yahoofinancials
+xlrd
