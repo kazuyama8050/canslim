@@ -7,10 +7,14 @@ CAN SLIMロジックに必要な情報を取得するプログラム
 - -t: 取得情報（symbol or finance or stock）
 - -p: プロセス数
 - -c: 国（jp or usa）
+- -E: 環境（dev or prod）
 
 ## can_slim_logic
 CAN SLIMロジックプログラム
 緩めの条件とキツめの条件を計算する
+### 実行時引数
+- -t: 取得情報（symbol or finance or stock）
+- -c: 国（jp or usa）
 
 ## ロジックで用いる指標など
 ### 四半期EPS増加率
