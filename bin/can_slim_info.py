@@ -64,7 +64,7 @@ three_month_later = today + relativedelta(months=3)
 default_report_date = DateFormat.string_to_date_format("1970-01-01")
 
 COUNTRY = options.country
-
+double
 mailHandler = MailHandler(credentials_config.get("mail", "from_address"), credentials_config.get("mail", "pass"))
 
 def main():
